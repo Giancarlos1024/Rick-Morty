@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.centrarContainer {
+  display: flex;
+  /* background-color: yellow; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(/espacio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.flex-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* background-color: aqua; */
+}
+
+.rick-morty-home {
+  width: 400px;
+  height: 300px;
+  margin: 15px 0;
+}
+
+.buttonPersonajes {
+  padding: 15px 10px;
+  background-color: greenyellow;
+  border: none;
+  margin-bottom: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: rgb(12, 12, 12);
+  font-weight: bold;
+}
+
+h1 {
+  color: rgb(245, 233, 233);
+  padding: 10px 0;
+}
+
+.personajesUnitarios > div {
+  margin: 5px;
+  background-color: rgb(238, 243, 243);
+  box-shadow: 1px 1px 5px rgb(17, 16, 16);
+}
+
+.personajesUnitarios > div > img {
+  width: 150px;
+  height: 100px;
+  padding: 5px;
+}
+
+.personajesUnitarios > div > p {
+  font-size: 12px;
+}
+
+.contenedorPersonajes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.generalCharacter {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.Alive {
+  background-color: greenyellow;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+  padding: 4px;
+}
+
+.Dead {
+  background-color: rgb(223, 24, 10);
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+  padding: 4px;
+}
+
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1024px) {
+  
+}
+
+/* Estilos para pantallas medianas */
+@media (min-width: 768px) and (max-width: 1023px) {
+  
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+  .centrarContainer {
+    display: flex;
+    background-color: yellow;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+}
